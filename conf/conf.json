@@ -1,0 +1,34 @@
+{
+  "vendorsolutions": [
+    {
+      "id": "3SCALE",
+      "name": "3SCALE",
+      "description": "bla bla",
+      "website": "3scale.com",
+      "image": "https://www.3scale.net/wp-content/uploads/2015/01/3scale-by-redhat.png",
+      "nb_stars": 3,
+      "pros": [
+        "good",
+        "very good"
+      ],
+      "cons": [
+        "not good"
+      ]
+    },
+    {
+      "id": "KONG",
+      "name": "KONG",
+      "description": "bla bla2",
+      "website": "kong.com",
+      "image": "https://konghq.com/wp-content/uploads/2017/09/kong-logo.png",
+      "nb_stars": 4,
+      "pros": [
+        "very good",
+        "very very good"
+      ],
+      "cons": [
+        "not not good"
+      ]
+    }
+  ]
+}

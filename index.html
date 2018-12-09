@@ -1,0 +1,371 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link rel="icon" href="./img/favicon-octo.ico">
+    <title>Which API Management is right for me ?</title>
+    <link href="./css/bootstrap.css" rel="stylesheet">
+    <link href="./css/open-iconic-bootstrap.css" rel="stylesheet">
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+
+<body>
+<img id="bg" src=""/>
+
+<header>
+
+    <div class="d-flex flex-column flex-md-row align-items-center p-3 px-md-4 mb-3 bg-white border-bottom shadow-sm">
+        <h5 id="logo" class="my-0 mr-md-auto font-weight-normal"><img src="./img/logo-octo.png">Which API Management is
+            right for me ?</h5>
+    </div>
+
+</header>
+
+<main role="main">
+
+    <section class="container" id="section-start-quizz">
+        <div class="row">
+            <div class="col-md-3"></div>
+            <div class="col-md-6">
+                <div class="card start-quizz">
+                    <div class="card-body">
+                        <h1 class="card-title">WICH API MANAGEMENT?</h1>
+                        <h2 class="card-title">START THE QUIZZ !</h2>
+                        <img src="https://rejoins.octo.com/assets/home/internship-a595eba43b8bad6f7afd4708824248a3c9d5992ae6129498bd71cb7e28f789a3.svg">
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3"></div>
+        </div>
+    </section>
+
+    <section class="container" id="section-quizz">
+        <div class="row">
+            <div class="col-md-12">
+                <div class="card">
+                    <div class="card-body quizz">
+                        <form id="what-dev-form" class="needs-validation">
+                            <h1 class="mb-3">What kind of developers I have ?</h1>
+                            <div class="form-check">
+                                <input class="form-check-input" type="radio" name="what-dev-radios"
+                                       id="what-dev-radios-none" value="none">
+                                <label class="form-check-label" for="what-dev-radios-none">
+                                    None
+                                </label>
+                            </div>
+                            <div class="form-check">
+                                <input class="form-check-input" type="radio" name="what-dev-radios"
+                                       id="what-dev-radios-experts" value="experts">
+                                <label class="form-check-label" for="what-dev-radios-experts">
+                                    I have expert developers
+                                </label>
+                            </div>
+                        </form>
+                        <form id="T2M-custom-form" class="needs-validation">
+                            <h1 class="mb-3">What are my time to market and customization needs</h1>
+                            <div class="form-check">
+                                <input class="form-check-input" type="radio" name="T2M-custom-radios"
+                                       id="T2M-custom-radios-fast-low" value="fast-low">
+                                <label class="form-check-label" for="T2M-custom-radios-fast-low">
+                                    FAST T2M LOW CUSTOMIZABLE
+                                </label>
+                            </div>
+                            <div class="form-check">
+                                <input class="form-check-input" type="radio" name="T2M-custom-radios"
+                                       id="T2M-custom-radios-medium-medium" value="medium-medium">
+                                <label class="form-check-label" for="T2M-custom-radios-medium-medium">
+                                    MEDIUM T2M MEDIUM CUSTOMISABLE
+                                </label>
+                            </div>
+                            <div class="form-check">
+                                <input class="form-check-input" type="radio" name="T2M-custom-radios"
+                                       id="T2M-custom-radios-slow-high" value="slow-high">
+                                <label class="form-check-label" for="T2M-custom-radios-slow-high">
+                                    SLOW T2M HIGHLY CUSTOMIZABLE
+                                </label>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="container" id="section-solutions">
+    </section>
+
+</main>
+
+<footer class="footer">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-3"><img src="./img/logo-octo.png"></div>
+            <div class="col-md-6">
+                <p>
+                    Paris - Rabat - Lausanne - Sydney <br/>
+                    Contact© OCTO Technology 2018
+                </p>
+            </div>
+            <div class="col-md-3"></div>
+        </div>
+    </div>
+    </div>
+</footer>
+
+<!-- Bootstrap core JavaScript
+================================================== -->
+<!-- Placed at the end of the document so the pages load faster -->
+<script src="./js/jquery-3.3.1.min.js"></script>
+<script src="./js/bootstrap.js"></script>
+
+
+<script>
+
+    $(document).ready(function() {
+
+        /*
+                $.ajaxSetup({
+                    beforeSend: function(xhr) {
+                        xhr.setRequestHeader('Authorization', 'Basic amFtZXM6Ym9uZA==');
+                    }
+                });
+          */
+
+        var OCTO_APIM_APP = OCTO_APIM_APP || {};
+
+        OCTO_APIM_APP.app = {
+            init: function() {
+                var self = this;
+                $("form").hide();
+                $("section").hide();
+                $("input[type=radio]").removeAttr('checked');
+                console.log($("input[type=radio]"));
+
+                $("#logo").click(function() {
+                    app.init();
+                });
+
+                $("#section-start-quizz").click(function() {
+                    $("#section-start-quizz").hide();
+                    $("#section-quizz").fadeIn();
+                });
+
+
+                $("#search-form").submit(function(e) {
+                    e.preventDefault();
+                });
+
+                $("#search-button").click(function() {
+                    app.search($("#input-search")[0].value);
+                });
+
+
+                $("#create-button").click(function() {
+                    app.create();
+                });
+
+                $("#what-dev-form input").click(function() {
+                    console.log("click!!!");
+                    $("form").hide();
+                    $("#T2M-custom-form").fadeIn();
+
+                    var radioValue = $("input[name='what-dev-radios']:checked").val();
+                    if(radioValue) {
+                        console.log("Your are a - " + radioValue);
+                    }
+
+                });
+                $("#T2M-custom-form input").click(function() {
+                    console.log("click!!!");
+                    $("form").hide();
+                    $("#section-quizz").hide();
+                    $("#section-solutions").fadeIn();
+
+                    var radioValue = $("input[name='T2M-custom-radios']:checked").val();
+                    if(radioValue) {
+                        console.log("Your are a - " + radioValue);
+                    }
+
+                });
+
+                $("section").hide();
+                $("#section-search-result").html("");
+                $("#menu-search").addClass("btn-primary");
+                $("#menu-create").removeClass("btn-primary");
+                $("#what-dev-form").fadeIn();
+                $("#section-start-quizz").fadeIn();
+
+                //$("#bg").attr("src", "./img/octo-tribes.svg");
+                $("#bg").attr("src", "./img/27661043709_195757b691_o.jpg");
+                //$("#bg").attr("src", "./img/38559874055_e02dd12c31_o (1).jpg");
+                $("#bg").fadeIn(2000);
+
+
+                $.ajax({
+                    url: "./conf/conf.json",
+                    type: 'GET',
+                    dataType: "json",
+                    crossDomain: true,
+                    cache: false,
+                    success: function(data) {
+                        console.log("ajax success");
+                        console.log(data.vendorsolutions);
+                        console.log("here 2");
+                        var html = '<div class="row">';
+                        for(var i = 0; i < data.vendorsolutions.length; i++) {
+                            console.log("here 3");
+                            console.log(data.vendorsolutions[i]);
+                            html += self.generateVendorSolutionBloc(data.vendorsolutions[i]);
+                            console.log("here 4");
+                            if(i != 0 && (i + 1) % 3 === 0) {
+                                html += '</div>';
+                                html += '<div class="row">';
+                            }
+                        }
+                        html += '</div>';
+                        $("#section-solutions").html(html);
+                        //$("#section-solutions").fadeIn();
+                    },
+                    error: function(xhr, ajaxOptions, thrownError) {
+                        console.log("search ajax error!");
+                        console.log(xhr.status);
+                        console.log(thrownError);
+                    }
+                });
+
+                console.log("app initialized...");
+            },
+            generateVendorSolutionBloc: function(apim) {
+                var html = '';
+                html += '<div class="col-md-4">';
+                html += '<div class="card">';
+                html += '<img class="card-img-top card-header" src="' + apim.image + '" alt="' + apim.name + '">';
+                html += '<div class="card-body">';
+                html += '<h5 class="card-title">' + apim.name + '</h5>';
+                html += '<p class="card-text">' + apim.description + '</p>';
+                html += '<a href="#" class="btn btn-primary"><span class="oi oi-external-link" title="icon name" aria-hidden="true"></span> ' + apim.website + '</a>';
+                html += '</div>';
+                html += '<div class="card-footer">';
+                for(var i = 0; i < apim.nb_stars; i++) {
+                    html += '<span class="oi oi-star text-success" title="icon name" aria-hidden="true"></span>';
+                }
+                if(apim.nb_stars < 5) {
+                    for(var i = apim.nb_stars; i < 5; i++) {
+                        html += '<span class="oi oi-star text-black-50" title="icon name" aria-hidden="true"></span>';
+                    }
+                }
+                html += '</div>';
+                html += '</div>';
+                html += '</div>';
+                return html;
+            },
+            create: function() {
+                var self = this;
+                console.log("Create a fournisseur : ");
+                var firstname = $("#input-firstname")[0].value;
+                var lastname = $("#input-lastname")[0].value;
+                var address = $("#input-address")[0].value;
+                var date = $("#input-date")[0].value;
+                var country = $("#input-country")[0].value;
+                var city = $("#input-city")[0].value;
+                var zipcode = $("#input-zipcode")[0].value;
+
+
+                var formHasErrors = false;
+                $("#create-form .invalid-tooltip").hide();
+                if(firstname == "") {
+                    // $("#input-firstname + .invalid-tooltip").fadeIn();
+                    formHasErrors = true;
+                }
+                if(lastname == "") {
+                    //$("#input-lastname + .invalid-tooltip").fadeIn();
+                    formHasErrors = true;
+                }
+                if(address == "") {
+                    //$("#input-address + .invalid-tooltip").fadeIn();
+                    formHasErrors = true;
+                }
+                if(country == "") {
+                    //$("#input-country + .invalid-tooltip").fadeIn();
+                    formHasErrors = true;
+                }
+                if(city == "") {
+                    // $("#input-city + .invalid-tooltip").fadeIn();
+                    formHasErrors = true;
+                }
+                if(zipcode == "") {
+                    //$("#input-zipcode + .invalid-tooltip").fadeIn();
+                    formHasErrors = true;
+                }
+                if(zipcode != "" && !/\d{2}[ ]?\d{3}/.test(zipcode)) {
+                    $("#input-zipcode + .invalid-tooltip").fadeIn();
+                    formHasErrors = true;
+                }
+
+
+                if(formHasErrors == false) {
+                    var data = {
+                        "Personne_physique": {
+                            "Nom": lastname,
+                            "Prenom": firstname,
+                            "AutreNom": "ju",
+                            "AutrePrenom": "juju2",
+                            "GroupeDeCompte": "ZPHY",
+                            "TitreDeCivilite": "Monsieur",
+                            "DateDeNaissance": "1000-12-25T00:00:00"
+                        },
+                        "Adresse": {
+                            "Numero_Et_Rue": address,
+                            "Ville": city,
+                            "CodePostale": zipcode,
+                            "Pays": "FR"
+                        },
+                        "Pilotage": {
+                            "CodeLangue": "F",
+                            "Tva4": "1234567850",
+                            "CodeBranche": "Z001",
+                            "Siren": "123400798"
+                        }
+                    };
+
+                    console.log(data);
+
+                    $.ajax({
+                        //url: "http://n4slsap051:8010/sap/opu/odata/sap/ZCHORUS/fournisseurs",
+                        url: "./mock/post_fournisseurs.json",
+                        headers: {
+                            'Accept-Language': ""
+                        },
+                        type: 'POST',
+                        dataType: "json",
+                        contentType: "application/json",
+                        crossDomain: true,
+                        cache: false,
+                        data: JSON.stringify(data),
+                        success: function(result) {
+                            console.log("ajax create OK!");
+                            console.log(result);
+                        },
+                        error: function(error) {
+                            console.log("error ajax create");
+                            console.log(error);
+                        }
+                    });
+                } else {
+                    console.log("Form has errors")
+                }
+            }
+        }
+
+        var app = OCTO_APIM_APP.app || new OCTO_APIM_APP.app();
+        app.init();
+
+    });
+</script>
+
+
+</body>
+</html>
