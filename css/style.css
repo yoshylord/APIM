@@ -133,3 +133,45 @@ body {
 .footer img {
     height: 80px;
 }
+
+
+
+
+/* Medium devices (desktops, 992px and up) */
+@media (max-width: 991px) {
+
+}
+/* Small devices (tablets, 768px and up) */
+@media (max-width: 767px) {
+
+    header h5 {
+        font-size: 1em;
+    }
+    body {
+        background-color: #DEDFE5;
+        min-height: 300px;
+    }
+    body>img {
+        display: none !important;
+    }
+    .card {
+        margin-bottom: 15px;
+    }
+    .start-quizz img {
+        margin-top: -80px;
+        height: 100px;
+    }
+    .start-quizz h1 {
+        font-size: 2.4rem;
+    }
+    .start-quizz h2 {
+        font-size: 2rem;
+    }
+    .footer div {
+        text-align: center;
+    }
+    .footer img {
+        display: none;
+    }
+
+}
