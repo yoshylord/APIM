@@ -132,6 +132,9 @@ body {
     background-color: #f5f5f5;
     padding-top: 10px;
 }
+.footer div {
+    text-align: center;
+}
 .footer img {
     height: 80px;
 }
@@ -168,9 +171,6 @@ body {
     }
     .start-quizz h2 {
         font-size: 2rem;
-    }
-    .footer div {
-        text-align: center;
     }
     .footer img {
         display: none;

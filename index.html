@@ -32,7 +32,7 @@
             <div class="col-md-6">
                 <div class="card start-quizz">
                     <div class="card-body">
-                        <h1 class="card-title">WICH API MANAGEMENT?</h1>
+                        <h1 class="card-title">WHICH API MANAGEMENT?</h1>
                         <h2 class="card-title">START THE QUIZZ !</h2>
                         <img src="https://rejoins.octo.com/assets/home/internship-a595eba43b8bad6f7afd4708824248a3c9d5992ae6129498bd71cb7e28f789a3.svg">
                     </div>
@@ -284,6 +284,20 @@
                     html += '<a href="#" class="btn btn-primary"><span class="oi oi-external-link" title="icon name" aria-hidden="true"></span> ' + apim.website + '</a>';
                 }
                 html += '</div>';
+
+                html += '<ul class="list-group list-group-flush">';
+                html += '<li class="list-group-item">';
+                for(var i = 0; i < apim.pros.length; i++) {
+                    html += '<span class="oi oi-plus text-success" title="icon name" aria-hidden="true"></span> ' + apim.pros[i] +'<br />';
+                }
+                html += '</li>';
+                html += '<li class="list-group-item">';
+                for(var i = 0; i < apim.cons.length; i++) {
+                    html += '<span class="oi oi-minus text-danger" title="icon name" aria-hidden="true"></span> ' + apim.cons[i] +'<br />';
+                }
+                html += '</li>';
+                html += '</ul>';
+
                 if(apim.nb_stars) {
                     html += '<div class="card-footer">';
                     for(var i = 0; i < apim.nb_stars; i++) {
