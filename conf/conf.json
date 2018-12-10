@@ -1,4 +1,215 @@
 {
+  "quizz": {
+    "ID1": {
+      "question": "What kind of developers I have ?",
+      "answers": [
+        {
+          "answer": "None",
+          "goto": "21"
+        },
+        {
+          "answer": "I have developers",
+          "goto": "22"
+        },
+        {
+          "answer": "I have experts developers",
+          "goto": "23"
+        }
+      ]
+    },
+    "ID21": {
+      "question": "Do I have a high budget ?",
+      "answers": [
+        {
+          "answer": "No",
+          "goto": "31"
+        },
+        {
+          "answer": "Yes",
+          "goto": "32"
+        }
+      ]
+    },
+    "ID22": {
+      "question": "Do I have a high budget ?",
+      "answers": [
+        {
+          "answer": "No",
+          "goto": "33"
+        },
+        {
+          "answer": "Yes",
+          "goto": "34"
+        }
+      ]
+    },
+    "ID23": {
+      "question": "What are my time to market and customization needs ?",
+      "answers": [
+        {
+          "answer": "Fast T2M and law customization",
+          "goto": "35"
+        },
+        {
+          "answer": "Medium T2M medium customization",
+          "goto": "36"
+        },
+        {
+          "answer": "Slow T2M highly customization",
+          "goto": "37"
+        }
+      ]
+    },
+    "ID32": {
+      "question": "Do I have a strong partnership with a vendor on my IS ?",
+      "answers": [
+        {
+          "answer": "Yes",
+          "goto": "41"
+        },
+        {
+          "answer": "No",
+          "goto": "42"
+        }
+      ]
+    },
+    "ID41": {
+      "question": "Which vendor ?",
+      "answers": [
+        {
+          "answer": "IBM",
+          "goto": "51"
+        },
+        {
+          "answer": "Microsoft",
+          "goto": "52"
+        }
+      ]
+    },
+    "ID42": {
+      "question": "Do I have an ESB which I’m satisfied ?",
+      "answers": [
+        {
+          "answer": "Yes",
+          "goto": "53"
+        },
+        {
+          "answer": "No",
+          "goto": "54"
+        }
+      ]
+    },
+    "ID53": {
+      "question": "Which one ?",
+      "answers": [
+        {
+          "answer": "Tibco",
+          "goto": "61"
+        },
+        {
+          "answer": "Axway",
+          "goto": "62"
+        },
+        {
+          "answer": "Ca technologies",
+          "goto": "63"
+        },
+        {
+          "answer": "AG software",
+          "goto": "64"
+        },
+        {
+          "answer": "Mulesoft",
+          "goto": "65"
+        }
+      ]
+    },
+    "ID33": {
+      "type": "leaf",
+      "apim": [
+        "WSO2"
+      ]
+    },
+    "ID34": {
+      "type": "leaf",
+      "apim": [
+        "APIGEE"
+      ]
+    },
+    "ID35": {
+      "type": "leaf",
+      "apim": [
+        "3SCALE"
+      ]
+    },
+    "ID36": {
+      "type": "leaf",
+      "apim": [
+        "KONG",
+        "TYK"
+      ]
+    },
+    "ID37": {
+      "type": "leaf",
+      "apim": [
+        "DIY"
+      ]
+    },
+    "ID51": {
+      "type": "leaf",
+      "apim": [
+        "IBM"
+      ]
+    },
+    "ID52": {
+      "type": "leaf",
+      "apim": [
+        "MICROSOFT"
+      ]
+    },
+    "ID61": {
+      "type": "leaf",
+      "apim": [
+        "TIBCO"
+      ]
+    },
+    "ID62": {
+      "type": "leaf",
+      "apim": [
+        "AXWAY"
+      ]
+    },
+    "ID63": {
+      "type": "leaf",
+      "apim": [
+        "CA"
+      ]
+    },
+    "ID64": {
+      "type": "leaf",
+      "apim": [
+        "AG"
+      ]
+    },
+    "ID65": {
+      "type": "leaf",
+      "apim": [
+        "MULESOFT"
+      ]
+    },
+    "ID54": {
+      "type": "leaf",
+      "apim": [
+        "RFP"
+      ]
+    },
+    "ID31": {
+      "type": "leaf",
+      "apim": [
+        "TRYAGAIN"
+      ]
+    }
+  },
   "vendorsolutions": [
     {
       "id": "3SCALE",
@@ -28,6 +239,201 @@
       ],
       "cons": [
         "not not good"
+      ]
+    },
+    {
+      "id": "TYK",
+      "name": "TYK",
+      "description": "bla bla2 tyk",
+      "website": "tyk.com",
+      "image": "https://nordicapis.com/wp-content/uploads/tyk-logo.png",
+      "nb_stars": 4,
+      "pros": [
+        "good",
+        "very very good"
+      ],
+      "cons": [
+        "not little good"
+      ]
+    },
+    {
+      "id": "DIY",
+      "name": "DIY",
+      "description": "bla bla2 DIY",
+      "website": null,
+      "image": "https://www.logolynx.com/images/logolynx/f5/f552021024fbf813f280ef89d8e9e90f.jpeg",
+      "nb_stars": null,
+      "pros": [
+        "good",
+        "very very good"
+      ],
+      "cons": [
+        "not little good"
+      ]
+    },
+    {
+      "id": "APIGEE",
+      "name": "APIGEE",
+      "description": "bla bla2 APIGEE",
+      "website": "apigee.com",
+      "image": "https://i2.wp.com/knoldus.blog/wp-content/uploads/2018/01/apigee_logo-svg.png?resize=810%2C279&ssl=1",
+      "nb_stars": 3,
+      "pros": [
+        "good",
+        "very very good"
+      ],
+      "cons": [
+        "not little good"
+      ]
+    },
+    {
+      "id": "WSO2",
+      "name": "WSO2",
+      "description": "bla bla2 WSO2",
+      "website": "wso2.com",
+      "image": "https://upload.wikimedia.org/wikipedia/en/5/56/WSO2_Software_Logo.png",
+      "nb_stars": 1,
+      "pros": [
+        "good",
+        "good"
+      ],
+      "cons": [
+        "not good"
+      ]
+    },
+    {
+      "id": "IBM",
+      "name": "IBM",
+      "description": "bla bla2 IBM",
+      "website": "ibm.com",
+      "image": "https://strongloop.com/blog-assets/2016/02/apiconnect_logo.png",
+      "nb_stars": 1,
+      "pros": [
+        "good",
+        "good"
+      ],
+      "cons": [
+        "not good"
+      ]
+    },
+    {
+      "id": "MICROSOFT",
+      "name": "MICROSOFT",
+      "description": "bla bla2 MICROSOFT",
+      "website": "microsoft.com",
+      "image": "https://www.avasoft.com/PictureLibrary/solutions/microsoft-azure/cl-apimanagement.png",
+      "nb_stars": 1,
+      "pros": [
+        "good",
+        "good"
+      ],
+      "cons": [
+        "not good"
+      ]
+    },
+    {
+      "id": "TIBCO",
+      "name": "TIBCO",
+      "description": "bla bla2 TIBCO",
+      "website": "tibco.com",
+      "image": "https://www.tibco.com/blog/wp-content/uploads/2016/05/mash.png",
+      "nb_stars": 1,
+      "pros": [
+        "good",
+        "good"
+      ],
+      "cons": [
+        "not good"
+      ]
+    },
+    {
+      "id": "AXWAY",
+      "name": "AXWAY",
+      "description": "bla bla2 AXWAY",
+      "website": "axway.com",
+      "image": "https://www.tradingsat.com/media/pictures/realsize/news/l-editeur-de-logiciels-plonge-en-bourse-577537.png",
+      "nb_stars": 1,
+      "pros": [
+        "good",
+        "good"
+      ],
+      "cons": [
+        "not good"
+      ]
+    },
+    {
+      "id": "CA",
+      "name": "CA Technologies",
+      "description": "bla bla2 CA",
+      "website": "ca.com",
+      "image": "https://www.twobotechnologies.com/assets/images/partners/ca-logo-bw-hi-res.png",
+      "nb_stars": 1,
+      "pros": [
+        "good",
+        "good"
+      ],
+      "cons": [
+        "not good"
+      ]
+    },
+    {
+      "id": "AG",
+      "name": "Software AG",
+      "description": "bla bla2 AG",
+      "website": "ag.com",
+      "image": "http://www1.softwareag.com/ca/images/SAG_Level3_wMs-API-Management_tcm245-125154.jpg",
+      "nb_stars": 1,
+      "pros": [
+        "good",
+        "good"
+      ],
+      "cons": [
+        "not good"
+      ]
+    },
+    {
+      "id": "MULESOFT",
+      "name": "MULESOFT",
+      "description": "bla bla2 MULESOFT",
+      "website": "mulesoft.com",
+      "image": "https://www.mulesoft.com/sites/default/files/mulesoft-logo-open-graph.png",
+      "nb_stars": 1,
+      "pros": [
+        "good",
+        "good"
+      ],
+      "cons": [
+        "not good"
+      ]
+    },
+    {
+      "id": "RFP",
+      "name": "RFP",
+      "description": "Please send an RFP to Tibco, Axway, CA Technologies, Software AG, MULESOFT",
+      "website": null,
+      "image": "https://www.logolynx.com/images/logolynx/f5/f552021024fbf813f280ef89d8e9e90f.jpeg",
+      "nb_stars": null,
+      "pros": [
+        "good",
+        "good"
+      ],
+      "cons": [
+        "not good"
+      ]
+    },
+    {
+      "id": "TRYAGAIN",
+      "name": "TRYAGAIN",
+      "description": "There is no proposed solution ofr you, please try again !",
+      "website": null,
+      "image": "https://www.logolynx.com/images/logolynx/f5/f552021024fbf813f280ef89d8e9e90f.jpeg",
+      "nb_stars": null,
+      "pros": [
+        "good",
+        "good"
+      ],
+      "cons": [
+        "not good"
       ]
     }
   ]
