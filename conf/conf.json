@@ -1,7 +1,26 @@
 {
   "quizz": {
     "ID1": {
-      "question": "What kind of developers I have ?",
+      "question": "Do I have APIs?",
+      "answers": [
+        {
+          "answer": "Yes",
+          "goto": "2"
+        },
+        {
+          "answer": "No",
+          "goto": "11"
+        }
+      ]
+    },
+    "ID11": {
+      "type": "leaf",
+      "apim": [
+        "FAIL"
+      ]
+    },
+    "ID2": {
+      "question": "What kind of developers do I have?",
       "answers": [
         {
           "answer": "None",
@@ -18,7 +37,7 @@
       ]
     },
     "ID21": {
-      "question": "Do I have a high budget ?",
+      "question": "Do I have a high budget?",
       "answers": [
         {
           "answer": "No",
@@ -31,7 +50,7 @@
       ]
     },
     "ID22": {
-      "question": "Do I have a high budget ?",
+      "question": "Do I have a high budget?",
       "answers": [
         {
           "answer": "No",
@@ -44,24 +63,24 @@
       ]
     },
     "ID23": {
-      "question": "What are my time to market and customization needs ?",
+      "question": "What are my time to market and customization needs?",
       "answers": [
         {
-          "answer": "Fast T2M and law customization",
+          "answer": "Fast T2M and low customization",
           "goto": "35"
         },
         {
-          "answer": "Medium T2M medium customization",
+          "answer": "Medium T2M and medium customization",
           "goto": "36"
         },
         {
-          "answer": "Slow T2M highly customization",
+          "answer": "Slow T2M and high customization",
           "goto": "37"
         }
       ]
     },
     "ID32": {
-      "question": "Do I have a strong partnership with a vendor on my IS ?",
+      "question": "Do I have a strong partnership with a vendor on my IS?",
       "answers": [
         {
           "answer": "Yes",
@@ -74,7 +93,7 @@
       ]
     },
     "ID41": {
-      "question": "Which vendor ?",
+      "question": "Which vendor?",
       "answers": [
         {
           "answer": "IBM",
@@ -87,7 +106,7 @@
       ]
     },
     "ID42": {
-      "question": "Do I have an ESB which I’m satisfied ?",
+      "question": "Do I have an ESB satisfying me?",
       "answers": [
         {
           "answer": "Yes",
@@ -100,7 +119,7 @@
       ]
     },
     "ID53": {
-      "question": "Which one ?",
+      "question": "Which one?",
       "answers": [
         {
           "answer": "Tibco",
@@ -111,11 +130,11 @@
           "goto": "62"
         },
         {
-          "answer": "Ca technologies",
+          "answer": "CA Technologies",
           "goto": "63"
         },
         {
-          "answer": "AG software",
+          "answer": "AG Software",
           "goto": "64"
         },
         {
@@ -409,7 +428,7 @@
     {
       "id": "RFP",
       "name": "RFP",
-      "description": "Please send an RFP to Tibco, Axway, CA Technologies, Software AG, MULESOFT",
+      "description": "Send an RFP to vendors (Tibco, Axway, CA Technologies, Software AG, MULESOFT) or start thinking about employing developers. ",
       "website": null,
       "image": "https://www.logolynx.com/images/logolynx/f5/f552021024fbf813f280ef89d8e9e90f.jpeg",
       "nb_stars": null,
@@ -423,8 +442,23 @@
     },
     {
       "id": "TRYAGAIN",
-      "name": "TRYAGAIN",
-      "description": "There is no proposed solution ofr you, please try again !",
+      "name": "TRY AGAIN",
+      "description": "Current low-cost solutions require developers... You may need a bigger budget or to employ developers.",
+      "website": null,
+      "image": "https://www.logolynx.com/images/logolynx/f5/f552021024fbf813f280ef89d8e9e90f.jpeg",
+      "nb_stars": null,
+      "pros": [
+        "good",
+        "good"
+      ],
+      "cons": [
+        "not good"
+      ]
+    },
+    {
+      "id": "FAIL",
+      "name": "TRY AGAIN",
+      "description": "Start doing APIs before thinking for an API Management solution :)",
       "website": null,
       "image": "https://www.logolynx.com/images/logolynx/f5/f552021024fbf813f280ef89d8e9e90f.jpeg",
       "nb_stars": null,

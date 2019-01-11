@@ -5,15 +5,18 @@ $(document).ready(function() {
     OCTO_APIM_APP.app = {
         conf: null,
         init: function() {
+            // Réinitialisation du formulaire
             var self = this;
             $("section").hide();
             $("input[type=radio]").removeAttr('checked');
             console.log($("input[type=radio]"));
 
+            // Relance le formulaire
             $("#logo").click(function() {
                 app.init();
             });
 
+            // Commence le quizz 
             $("#section-start-quizz").click(function() {
                 $("#section-start-quizz").hide();
                 $("#section-quizz").fadeIn();
@@ -30,9 +33,7 @@ $(document).ready(function() {
             $("#what-dev-form").fadeIn();
             $("#section-start-quizz").fadeIn();
 
-            //$("#bg").attr("src", "./img/octo-tribes.svg");
             $("#bg").attr("src", "./img/background.jpg");
-            //$("#bg").attr("src", "./img/38559874055_e02dd12c31_o (1).jpg");
             $("#bg").fadeIn(2000);
 
             // load json conf
