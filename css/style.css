@@ -84,15 +84,15 @@ form {
 .start-quizz:hover {
     opacity: 0.8;
 }
-.start-quizz h1 {
+.start-quizz h2 {
     font-size: 3vw;
 }
-.start-quizz h2 {
+.start-quizz h3 {
     font-size: 2.6vw;
     font-weight: normal;
     border: 1px solid #FFF;
     border-radius: 0.45rem;
-    width: 250px;
+    width: 300px;
     padding: 3px 8px;
     line-height: 1em;
 }
@@ -111,9 +111,7 @@ form {
     background-size: auto;
 }
 
-
-
-
+ 
 /* Sticky footer styles
 -------------------------------------------------- */
 html {
@@ -164,12 +162,12 @@ body {
     }
     .start-quizz img {
         margin-top: -80px;
-        height: 100px;
-    }
-    .start-quizz h1 {
-        font-size: 2.4rem;
+        height: 200px;
     }
     .start-quizz h2 {
+        font-size: 2.4rem;
+    }
+    .start-quizz h3 {
         font-size: 2rem;
     }
     .footer img {
