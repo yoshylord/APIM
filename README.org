@@ -1,4 +1,0 @@
-#+TITLE: WICH API MANAGEMENT?
-
-
-Just a simple quizz to help you to choose your API-Manager.
