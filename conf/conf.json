@@ -234,37 +234,50 @@
       "id": "3SCALE",
       "name": "3SCALE",
       "description": "bla bla",
-      "website": "3scale.com",
+      "website": "https://www.3scale.net",
       "image": "https://www.3scale.net/wp-content/uploads/2015/01/3scale-by-redhat.png",
       "nb_stars": 3,
       "pros": [
-        "good",
-        "very good"
+        "Excellent Time To Market",
+        "Does not need a lot of development to get a working tool",
+        "Developer portal can be generated and Admin portal is directly provided", 
+        "The solution is mature", 
+        "Great community and RedHat helpdesk"
       ],
       "cons": [
-        "not good"
+        "Does not offer the best Developer eXperience", 
+        "Implementing security protocols is complex", 
+        "SaaS solution", 
+        "What about the futur? RedHat has just been bought by IBM. The group now has two concurrent solutions. "
       ]
     },
     {
       "id": "KONG",
       "name": "KONG",
-      "description": "bla bla2",
-      "website": "kong.com",
+      "description": "KONG is a pure player offering an API Management solution, available in Community Edition and Profesionnal Edition. ",
+      "website": "https://konghq.com",
       "image": "https://konghq.com/wp-content/uploads/2017/09/kong-logo.png",
       "nb_stars": 4,
       "pros": [
-        "very good",
-        "very very good"
+        "Excellent Time To Market",
+        "The Community Edition is enough to go to production quickly", 
+        "Large community", 
+        "The solution is mature", 
+        "Cloud and on-premise solution", 
+        "Does not need a lot of development to get a working tool", 
+        "You can plug your own admin and developer portals"
       ],
       "cons": [
-        "not not good"
+        "You will need developers that are experts", 
+        "KONG is hype, the helpdesk may be overloaded", 
+        "The professional edition is necessary to get the admin and developer portals provided by KONG"
       ]
     },
     {
       "id": "TYK",
       "name": "TYK",
       "description": "bla bla2 tyk",
-      "website": "tyk.com",
+      "website": "https://tyk.io",
       "image": "https://nordicapis.com/wp-content/uploads/tyk-logo.png",
       "nb_stars": 4,
       "pros": [
@@ -277,24 +290,24 @@
     },
     {
       "id": "DIY",
-      "name": "DIY",
-      "description": "bla bla2 DIY",
+      "name": "Do it yourself",
+      "description": "Developing your own API Management solution will give you all control on the solution. You will be able to implement exactly what you need. ",
       "website": null,
       "image": "https://www.logolynx.com/images/logolynx/f5/f552021024fbf813f280ef89d8e9e90f.jpeg",
       "nb_stars": null,
       "pros": [
-        "good",
-        "very very good"
+        "Fits perfectly to your needs"
       ],
       "cons": [
-        "not little good"
+        "Expensive", 
+        "There is a risk to implement features that can be bought or used (open-source)"
       ]
     },
     {
       "id": "APIGEE",
       "name": "APIGEE",
       "description": "bla bla2 APIGEE",
-      "website": "apigee.com",
+      "website": "https://apigee.com/api-management/",
       "image": "https://i2.wp.com/knoldus.blog/wp-content/uploads/2018/01/apigee_logo-svg.png?resize=810%2C279&ssl=1",
       "nb_stars": 3,
       "pros": [
@@ -309,7 +322,7 @@
       "id": "WSO2",
       "name": "WSO2",
       "description": "bla bla2 WSO2",
-      "website": "wso2.com",
+      "website": "https://wso2.com/",
       "image": "https://upload.wikimedia.org/wikipedia/en/5/56/WSO2_Software_Logo.png",
       "nb_stars": 1,
       "pros": [
@@ -324,7 +337,7 @@
       "id": "IBM",
       "name": "IBM",
       "description": "bla bla2 IBM",
-      "website": "ibm.com",
+      "website": "https://www.ibm.com/cloud/api-connect",
       "image": "https://strongloop.com/blog-assets/2016/02/apiconnect_logo.png",
       "nb_stars": 1,
       "pros": [
@@ -339,7 +352,7 @@
       "id": "MICROSOFT",
       "name": "MICROSOFT",
       "description": "bla bla2 MICROSOFT",
-      "website": "microsoft.com",
+      "website": "https://azure.microsoft.com/fr-fr/services/api-management/",
       "image": "https://www.avasoft.com/PictureLibrary/solutions/microsoft-azure/cl-apimanagement.png",
       "nb_stars": 1,
       "pros": [
@@ -354,7 +367,7 @@
       "id": "TIBCO",
       "name": "TIBCO",
       "description": "bla bla2 TIBCO",
-      "website": "tibco.com",
+      "website": "https://www.tibco.com/products/api-management",
       "image": "https://www.tibco.com/blog/wp-content/uploads/2016/05/mash.png",
       "nb_stars": 1,
       "pros": [
@@ -369,7 +382,7 @@
       "id": "AXWAY",
       "name": "AXWAY",
       "description": "bla bla2 AXWAY",
-      "website": "axway.com",
+      "website": "https://www.axway.com/en/products/api-management",
       "image": "https://www.tradingsat.com/media/pictures/realsize/news/l-editeur-de-logiciels-plonge-en-bourse-577537.png",
       "nb_stars": 1,
       "pros": [
@@ -384,7 +397,7 @@
       "id": "CA",
       "name": "CA Technologies",
       "description": "bla bla2 CA",
-      "website": "ca.com",
+      "website": "https://www.ca.com/us/products/apim.html?intcmp=headernav",
       "image": "https://www.twobotechnologies.com/assets/images/partners/ca-logo-bw-hi-res.png",
       "nb_stars": 1,
       "pros": [
@@ -399,7 +412,7 @@
       "id": "AG",
       "name": "Software AG",
       "description": "bla bla2 AG",
-      "website": "ag.com",
+      "website": "https://www.softwareag.com/au/products/api/default",
       "image": "http://www1.softwareag.com/ca/images/SAG_Level3_wMs-API-Management_tcm245-125154.jpg",
       "nb_stars": 1,
       "pros": [
@@ -414,7 +427,7 @@
       "id": "MULESOFT",
       "name": "MULESOFT",
       "description": "bla bla2 MULESOFT",
-      "website": "mulesoft.com",
+      "website": "https://www.mulesoft.com/platform/api/manager",
       "image": "https://www.mulesoft.com/sites/default/files/mulesoft-logo-open-graph.png",
       "nb_stars": 1,
       "pros": [
@@ -433,12 +446,10 @@
       "image": "https://www.logolynx.com/images/logolynx/f5/f552021024fbf813f280ef89d8e9e90f.jpeg",
       "nb_stars": null,
       "pros": [
-        "good",
-        "good"
+        "Vendors will be able to show you different solutions. One may fits to your needs. ",
+        "With internal developers, you will be able to manage the chosen solution by yourself. "
       ],
-      "cons": [
-        "not good"
-      ]
+      "cons": [ ]
     },
     {
       "id": "TRYAGAIN",
@@ -448,7 +459,7 @@
       "image": "https://www.logolynx.com/images/logolynx/f5/f552021024fbf813f280ef89d8e9e90f.jpeg",
       "nb_stars": null,
       "pros": [
-        "good",
+        "",
         "good"
       ],
       "cons": [
